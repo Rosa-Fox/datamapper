@@ -16,6 +16,8 @@ class User
   property :password , String , length: 10..255
   property :created_at, DateTime
   property :updated_at, DateTime
+
+  has n, :posts
 end
 
 class Post
@@ -26,5 +28,7 @@ class Post
   property :body, String  , required: true
   property :created_at, DateTime
   property :updated_at, DateTime
+
+  belongs_to :user
 end
 DataMapper.auto_upgrade!
