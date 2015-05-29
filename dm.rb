@@ -14,3 +14,5 @@ class User
   property :lastname, String
   property :email, String
 end
+
+DataMapper.auto_upgrade!
