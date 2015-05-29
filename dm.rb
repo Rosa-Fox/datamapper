@@ -12,7 +12,7 @@ class User
   property :username, String
   property :firstname, String
   property :lastname, String
-  property :email, String
+  property :email, String  , format: :email_address
   property :created_at, DateTime
   property :updated_at, DateTime
 end
