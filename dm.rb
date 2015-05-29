@@ -13,6 +13,8 @@ class User
   property :firstname, String
   property :lastname, String
   property :email, String
+  property :created_at, DateTime
+  property :updated_at, DateTime
 end
 
 DataMapper.auto_upgrade!
