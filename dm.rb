@@ -18,6 +18,10 @@ class User
   property :updated_at, DateTime
 
   has n, :posts
+
+  def username= new_username
+    @username = new_username.downcase
+  end
 end
 
 class Post
