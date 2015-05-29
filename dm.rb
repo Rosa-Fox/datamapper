@@ -13,6 +13,7 @@ class User
   property :firstname, String
   property :lastname, String
   property :email, String  , format: :email_address
+  property :password , String , length: 10..255
   property :created_at, DateTime
   property :updated_at, DateTime
 end
